@@ -1,0 +1,19 @@
+{
+  "name": "Lume — Assistente Pessoal",
+  "short_name": "Lume",
+  "description": "Agenda e tarefas em uma experiência de assistente pessoal.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f7f8fc",
+  "theme_color": "#7667f5",
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
