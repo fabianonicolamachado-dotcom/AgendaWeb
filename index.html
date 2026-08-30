@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f7f8fc" />
+    <meta name="description" content="Lume, sua agenda pessoal inteligente." />
+    <title>Lume — Seu dia, mais leve</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Navegação principal">
+        <a class="brand" href="#" aria-label="Lume, início">
+          <span class="brand-mark" aria-hidden="true">✦</span>
+          <span>Lume</span>
+        </a>
+
+        <nav>
+          <a class="nav-item active" href="#inicio" aria-current="page">
+            <span class="nav-icon">⌂</span><span>Meu dia</span>
+          </a>
+          <a class="nav-item" href="#tarefas"><span class="nav-icon">✓</span><span>Tarefas</span><span class="count">5</span></a>
+          <a class="nav-item" href="#agenda"><span class="nav-icon">◫</span><span>Agenda</span></a>
+          <a class="nav-item" href="#rotinas"><span class="nav-icon">↻</span><span>Rotinas</span></a>
+        </nav>
+
+        <div class="sidebar-bottom">
+          <div class="tip-card">
+            <span class="tip-icon">✦</span>
+            <strong>Dica da Lume</strong>
+            <p>Reserve 10 minutos entre reuniões para respirar.</p>
+          </div>
+          <button class="profile" type="button" aria-label="Abrir perfil de Marina">
+            <span class="avatar">MF</span>
+            <span><strong>Marina</strong><small>Meu perfil</small></span>
+            <span aria-hidden="true">•••</span>
+          </button>
+        </div>
+      </aside>
+
+      <main id="inicio">
+        <header class="topbar">
+          <button class="mobile-menu" type="button" aria-label="Abrir menu">☰</button>
+          <div class="date-pill"><span>☀</span><span>Quinta-feira, 28 de agosto</span></div>
+          <div class="top-actions">
+            <button class="icon-button notification-button" type="button" aria-label="Notificações"><span>♢</span><i></i></button>
+            <button class="icon-button" type="button" aria-label="Configurações">⚙</button>
+          </div>
+        </header>
+
+        <section class="hero" aria-labelledby="greeting">
+          <div>
+            <p class="eyebrow">BOM DIA, MARINA</p>
+            <h1 id="greeting">Vamos fazer deste um <span>ótimo dia?</span></h1>
+            <p class="hero-copy">Você tem <strong>3 compromissos</strong> e <strong>5 tarefas</strong> para hoje.<br />Sua manhã está tranquila — aproveite para focar no que importa.</p>
+          </div>
+          <div class="weather" aria-label="Tempo: 24 graus, ensolarado">
+            <span class="weather-icon">☀</span>
+            <span><strong>24°</strong><small>Ensolarado</small></span>
+          </div>
+        </section>
+
+        <section class="next-card" aria-labelledby="next-title">
+          <div class="next-accent"></div>
+          <div class="time-block"><strong>09:30</strong><span>10:15</span></div>
+          <div class="next-info">
+            <div class="card-label"><span class="pulse-dot"></span> SUA PRÓXIMA ATIVIDADE</div>
+            <h2 id="next-title">Reunião de alinhamento</h2>
+            <p><span>◉</span> Equipe de Produto &nbsp;·&nbsp; Sala Jatobá</p>
+            <div class="attendees" aria-label="Participantes"><span>CR</span><span>LS</span><span>GB</span><small>+2 pessoas</small></div>
+          </div>
+          <div class="countdown"><span>Começa em</span><strong>40 min</strong><button type="button" data-action="details">Ver detalhes <span>→</span></button></div>
+        </section>
+
+        <div class="content-grid">
+          <section class="panel schedule" id="agenda" aria-labelledby="schedule-title">
+            <div class="section-heading"><div><span class="section-icon purple">◷</span><h2 id="schedule-title">Seu dia, passo a passo</h2></div><button type="button">Ver agenda completa</button></div>
+            <div class="timeline">
+              <article class="event current"><time>09:30</time><div class="timeline-line"><i></i></div><div class="event-card"><div><span class="tag purple-tag">TRABALHO</span><h3>Reunião de alinhamento</h3><p>Equipe de Produto · Sala Jatobá</p></div><span class="duration">45 min</span></div></article>
+              <article class="event"><time>12:30</time><div class="timeline-line"><i></i></div><div class="event-card lunch"><div><span class="tag orange-tag">PESSOAL</span><h3>Almoço com a Carol</h3><p>Bistrô da Praça</p></div><span class="duration">1h</span></div></article>
+              <article class="event"><time>15:00</time><div class="timeline-line"><i></i></div><div class="event-card focus"><div><span class="tag blue-tag">FOCO</span><h3>Revisar proposta comercial</h3><p>Tempo reservado para concentração</p></div><span class="duration">1h 30</span></div></article>
+            </div>
+            <div class="free-time"><span>✦</span><p><strong>Você tem 2h livres à tarde</strong><br />Que tal adiantar uma tarefa importante?</p><button type="button">Ver sugestões</button></div>
+          </section>
+
+          <section class="panel priorities" id="tarefas" aria-labelledby="priorities-title">
+            <div class="section-heading"><div><span class="section-icon coral">✓</span><h2 id="priorities-title">Prioridades de hoje</h2></div><button type="button">Ver todas</button></div>
+            <div class="progress-copy"><span>2 de 5 concluídas</span><strong>40%</strong></div>
+            <div class="progress"><i></i></div>
+            <div class="task-list">
+              <label class="task done"><input type="checkbox" checked /><span class="checkmark"></span><span><strong>Enviar relatório mensal</strong><small>Concluída às 08:45</small></span><b class="priority high">Alta</b></label>
+              <label class="task"><input type="checkbox" /><span class="checkmark"></span><span><strong>Responder e-mails pendentes</strong><small>Até 11:30</small></span><b class="priority high">Alta</b></label>
+              <label class="task"><input type="checkbox" /><span class="checkmark"></span><span><strong>Agendar consulta médica</strong><small>Sem horário definido</small></span><b class="priority medium">Média</b></label>
+              <label class="task done"><input type="checkbox" checked /><span class="checkmark"></span><span><strong>Confirmar reserva do jantar</strong><small>Concluída às 08:10</small></span><b class="priority low">Baixa</b></label>
+              <label class="task"><input type="checkbox" /><span class="checkmark"></span><span><strong>Comprar presente da Ana</strong><small>Até 18:00</small></span><b class="priority medium">Média</b></label>
+            </div>
+            <button class="add-task" type="button" data-action="quick-add"><span>＋</span> Adicionar tarefa</button>
+          </section>
+        </div>
+      </main>
+
+      <button class="assistant-button" type="button" data-action="assistant" aria-label="Falar ou digitar um comando"><span class="mic">●</span><span><strong>Como posso ajudar?</strong><small>Fale ou digite um comando</small></span><kbd>⌘ K</kbd></button>
+    </div>
+
+    <div class="modal-backdrop" id="quick-modal" hidden>
+      <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" type="button" aria-label="Fechar">×</button>
+        <span class="modal-spark">✦</span><p class="eyebrow">ADIÇÃO RÁPIDA</p>
+        <h2 id="modal-title">O que você quer lembrar?</h2>
+        <p>Escreva naturalmente. A Lume organiza os detalhes para você.</p>
+        <input id="command-input" type="text" placeholder="Ex.: Dentista amanhã às 14h" aria-label="Novo compromisso ou tarefa" />
+        <div class="suggestions"><button type="button">＋ Tarefa</button><button type="button">◷ Compromisso</button><button type="button">↻ Lembrete</button></div>
+        <button class="primary-action" type="button">Adicionar ao meu dia <span>→</span></button>
+      </section>
+    </div>
+    <div class="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
